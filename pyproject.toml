@@ -1,0 +1,30 @@
+[project]
+name = "chest-setup"
+version = "0.1.0"
+description = "CNN classifier for chest cancer detection"
+readme = "README.md"
+authors = [
+  { name = "DhruvJais01", email = "dhruvjaiswal400@gmail.com" }
+]
+requires-python = ">=3.8"
+dependencies = [
+
+]
+
+[project.urls]
+homepage = "https://github.com/DhruvJais01/Chest-Cancer-Classification-Project"
+bugtracker = "https://github.com/DhruvJais01/Chest-Cancer-Classification-Project/issues"
+
+
+[project.scripts]
+chest-setup = "chest_setup:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
